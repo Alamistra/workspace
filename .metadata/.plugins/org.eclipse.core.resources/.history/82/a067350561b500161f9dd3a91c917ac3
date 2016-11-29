@@ -1,0 +1,13 @@
+package com.mybank.domain;
+
+public class CheckingAccount extends Account{
+	public double overdraftAmount;
+	public ChekingAccount(double initBalance, double overdraft){
+		super(initBalance);
+		overdraftAmount = overdraft;
+	}
+	public ChekingAccount (double initBalance){
+		this(initBalance, 0.0);
+	}
+
+}
